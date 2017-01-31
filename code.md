@@ -12,6 +12,7 @@ package com.javarush.test.level04.lesson04.task10;
 import java.io.*;
 
 public class Solution {
+
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
