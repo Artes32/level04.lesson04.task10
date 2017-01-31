@@ -12,7 +12,6 @@ package com.javarush.test.level04.lesson04.task10;
 import java.io.*;
 
 public class Solution {
-
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -22,29 +21,14 @@ public class Solution {
         int b = Integer.parseInt(sNumber2);
         String sNumber3 = reader.readLine();
         int c = Integer.parseInt(sNumber3);
-        int d = 4;
 
-        if (a == b) {
-            d = 1;
+        if (a == b)
             if (b == c)
-                d = 3;
-        }
-        if (d != 3)
-            if (b == c)
-                d = 2;
-
-        switch (d) {
-            case 1:
-                System.out.println(a + " " + b);
-                break;
-            case 2:
-                System.out.println(b + " " + c);
-                break;
-            case 3:
                 System.out.println(a + " " + b + " " + c);
-                break;
-            case 4:
-                System.out.println("Одинаковых чисел нет.");
-        }
+            else
+                System.out.println(a + " " + b);
+        else
+            if (b == c)
+                System.out.println(b + " " + c);
     }
 }
